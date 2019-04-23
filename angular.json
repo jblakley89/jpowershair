@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jpowershair",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/less/bootstrap.less"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/app/libs/instafeed.min.js",
+              "src/app/libs/embedsocial.in.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -84,9 +87,12 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.less"
+              "src/less/bootstrap.less"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/app/libs/instafeed.min.js",
+              "src/app/libs/embedsocial.in.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

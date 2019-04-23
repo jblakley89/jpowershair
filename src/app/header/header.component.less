@@ -1,0 +1,62 @@
+@import '../../less/variables.less';
+
+.bg{
+    background-color: @color-red;
+}
+
+a{
+    color: grey;
+    font-size: 25px;
+}
+a.active{
+    color: white;
+}
+
+img.logo{
+    height: 60px;
+}
+
+img.title{
+    height:60px;
+}
+
+.nav{
+    float: right;
+}
+
+button{
+    height: 40px;
+}
+
+table{
+    width: 100%;
+}
+
+@media(max-width:995px){
+    a{
+        font-size: 20px;
+    }
+    img.logo{
+        display: none;
+    }
+
+    .nav-link{
+        padding: 8px 8px;
+    }
+}
+
+@media(max-width:775px){
+    a{
+        font-size:18px;
+    }
+    .nav-link{
+        padding: 8px 4px;
+    }
+    img.title{
+        display: none;
+    }
+
+    img.logo{
+        display:initial;
+    }
+}
